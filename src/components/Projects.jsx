@@ -11,6 +11,9 @@ import {
   Globe,
   Layout,
   X,
+  Settings,
+  Smartphone,
+  Server,
 } from "lucide-react";
 
 // ---------------- ICON MAP (stable, no re-render) ----------------
@@ -20,6 +23,9 @@ const ICONS = {
   website: <Layout size={20} className="text-cyan-500" />,
   models: <Cpu size={20} className="text-yellow-400" />,
   project: <Code2 size={20} className="text-green-400" />,
+  setup: <Settings size={20} className="text-orange-400" />,
+  app: <Smartphone size={20} className="text-emerald-500" />,
+  api: <Server size={20} className="text-purple-500" />,
 };
 
 // ---------------- TIMELINE DATA (static) ----------------
@@ -69,6 +75,24 @@ const timelineData = [
     liveLink: null,
   },
   {
+    type: "setup",
+    title: "ERPNext Setup & Configuration",
+    description:
+      "A complete step-by-step setup and configuration guide for ERPNext using Frappe, covering installation, environment setup, Docker usage, site creation, and common troubleshooting for local development.",
+    tags: ["ERPNext", "Frappe", "Docker", "Linux", "MariaDB", "Python"],
+    githubLink: "https://github.com/prem-raichura/ERPNext-Setup",
+    liveLink: null,
+  },
+  {
+    type: "api",
+    title: "Chiwala APIs",
+    description:
+      "A backend API system developed in core PHP for the Chiwala application, handling authentication, product management, order processing, and database interactions with a focus on simplicity and performance.",
+    tags: ["PHP", "MySQL", "Backend", "Core PHP"],
+    githubLink: "https://github.com/prem-raichura/Chiwala-Apis",
+    liveLink: null,
+  },
+  {
     type: "website",
     title: "Bolton Real Estate Website",
     description:
@@ -76,6 +100,15 @@ const timelineData = [
     tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Php"],
     githubLink: null,
     liveLink: "https://boltonrealestate.co.uk/",
+  },
+  {
+    type: "app",
+    title: "The Minecraft Store",
+    description:
+      "A college project application built for Minecraft gamers, featuring custom shader packs and texture packs with configuration options. The platform allows users to explore, preview, and download gaming resources with a clean and user-friendly interface.",
+    tags: ["Android", "Java", "Gaming", "Shaders", "Textures"],
+    githubLink: "https://github.com/prem-raichura/The-Minecraft-Store",
+    liveLink: null,
   },
 ];
 
@@ -315,7 +348,7 @@ const Projects = () => {
 
               {/* Filter Buttons */}
               <div className="relative flex flex-wrap justify-center gap-3 mb-10 mt-4 p-3 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-inner">
-                {["all", "research", "webapp", "website", "models"].map((cat) => (
+                {["all", "research", "webapp", "website", "models", "api", "app", "setup"].map((cat) => (
                   <motion.button
                     key={cat}
                     onClick={() => setFilter(cat)}

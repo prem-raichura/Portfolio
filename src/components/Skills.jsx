@@ -31,17 +31,17 @@ const skillsData = [
   {
     icon: iconMap.database,
     title: "Databases",
-    skills: ["MySQL", "Firebase"],
+    skills: ["MySQL", "Firebase", "Supabase"],
   },
   {
     icon: iconMap.cloud,
     title: "Version Control",
-    skills: ["Git", "GitHub"],
+    skills: ["Docker", "Git", "GitHub"],
   },
   {
     icon: iconMap.code,
     title: "Frontend",
-    skills: ["React.js", "Framer Motion", "Tailwind CSS"],
+    skills: ["React.js", "Tailwind CSS"],
   },
 ];
 
@@ -112,7 +112,7 @@ const SkillCard = React.memo(({ category, index }) => {
         {category.skills.map((skill) => (
           <span
             key={skill}
-            className="bg-primary/70 text-creamm px-3 py-1 rounded-full text-sm"
+            className="bg-primary/70 text-creamm px-3 py-1 rounded-full text-lg"
           >
             {skill}
           </span>

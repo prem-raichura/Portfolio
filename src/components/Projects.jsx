@@ -39,13 +39,13 @@ const timelineData = [
     liveLink: "https://doi.org/10.1109/AIMV66517.2025.11203522",
   },
   {
-    type: "webapp",
-    title: "Traffic density & detection web app",
+    type: "setup",
+    title: "ERPNext Setup & Configuration",
     description:
-      "An AI-powered web application that uses the YOLOv5su model trained on the IITMhetra dataset to detect and analyze vehicles in uploaded images or videos — built for accurate, real-time-capable traffic monitoring.",
-    tags: ["FastAPI", "React", "Vite", "YOLOv5", "Traffic Analysis", "Vehicle Detection", "AI/ML"],
-    githubLink: "https://github.com/prem-raichura/Vehicle-Density-and-Detection-App",
-    liveLink: "https://vehicle-density-and-detection-app.vercel.app/",
+      "A complete step-by-step setup and configuration guide for ERPNext using Frappe, covering installation, environment setup, Docker usage, site creation, and common troubleshooting for local development.",
+    tags: ["ERPNext", "Frappe", "Docker", "Linux", "MariaDB", "Python"],
+    githubLink: "https://github.com/prem-raichura/ERPNext-Setup",
+    liveLink: null,
   },
   {
     type: "website",
@@ -66,21 +66,21 @@ const timelineData = [
     liveLink: null,
   },
   {
+    type: "webapp",
+    title: "Traffic density & detection web app",
+    description:
+      "An AI-powered web application that uses the YOLOv5su model trained on the IITMhetra dataset to detect and analyze vehicles in uploaded images or videos — built for accurate, real-time-capable traffic monitoring.",
+    tags: ["FastAPI", "React", "Vite", "YOLOv5", "Traffic Analysis", "Vehicle Detection", "AI/ML"],
+    githubLink: "https://github.com/prem-raichura/Vehicle-Density-and-Detection-App",
+    liveLink: "https://vehicle-density-and-detection-app.vercel.app/",
+  },
+  {
     type: "models",
     title: "Prompt-Injection-Prevention",
     description:
       "A hybrid AI tool that detects unsafe prompts using rules and a machine learning model to prevent misuse of LLMs.",
     tags: ["AI Safety", "Machine Learning", "Prompt Filtering"],
     githubLink: "https://github.com/prem-raichura/Prompt-Injection-Prevention",
-    liveLink: null,
-  },
-  {
-    type: "setup",
-    title: "ERPNext Setup & Configuration",
-    description:
-      "A complete step-by-step setup and configuration guide for ERPNext using Frappe, covering installation, environment setup, Docker usage, site creation, and common troubleshooting for local development.",
-    tags: ["ERPNext", "Frappe", "Docker", "Linux", "MariaDB", "Python"],
-    githubLink: "https://github.com/prem-raichura/ERPNext-Setup",
     liveLink: null,
   },
   {
@@ -108,6 +108,15 @@ const timelineData = [
       "A college project application built for Minecraft gamers, featuring custom shader packs and texture packs with configuration options. The platform allows users to explore, preview, and download gaming resources with a clean and user-friendly interface.",
     tags: ["Android", "Java", "Gaming", "Shaders", "Textures"],
     githubLink: "https://github.com/prem-raichura/The-Minecraft-Store",
+    liveLink: null,
+  },
+  {
+    type: "app",
+    title: "Edumate - Student Learning App (UI Design)",
+    description:
+      "An Android-based learning and productivity application designed to support students with features such as study material access, task management, notifications, and a structured academic workflow, built to improve everyday learning efficiency.",
+    tags: ["Android", "Java", "HTML/CSS", "Firebase", "Education"],
+    githubLink: "https://github.com/prem-raichura/Edumate",
     liveLink: null,
   },
 ];

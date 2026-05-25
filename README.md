@@ -47,8 +47,8 @@ Ensure you have [Node.js](https://nodejs.org/en/) (which includes `npm`) install
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/prem-raichura/premraichura-portfolio.git
-    cd premraichura-portfolio
+    git clone https://github.com/prem-raichura/Portfolio.git
+    cd Portfolio
     ```
 2.  **Install dependencies:**
     ```bash
